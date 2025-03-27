@@ -28,34 +28,33 @@ This repo contains the code and data of:
 |  4   | Whisper-v3-large+LLaMA-3.1-8B |    4.53    |    4.04    | 70.43 | 62.43 |   81.54    | 69.53  |  98.08   |  79.06  |
 |  5   | Whisper-v3-turbo+LLaMA-3.1-8B |    4.55    |    4.02    | 58.23 | 62.04 |   72.09    | 71.12  |  98.46   |  76.16  |
 |  6   | Ultravox-v0.5-LLaMA-3.1-8B    |    4.59    |    4.11    | 58.68 | 54.16 |   68.35    | 66.51  |  98.65   |  74.34  |
-|  7   | MiniCPM-o                     |    4.42    |    4.15    | 50.72 | 54.78 |   78.02    | 49.25  |  97.69   |  71.69  |
-|  8   | Ultravox-v0.4.1-LLaMA-3.1-8B  |    4.55    |    3.90    | 53.35 | 47.17 |   65.27    | 66.88  |  98.46   |  71.45  |
-|  9   | Baichuan-Omni-1.5             |    4.50    |    4.05    | 43.40 | 57.25 |   74.51    | 54.54  |  97.31   |  71.14  |
-|  10  | Whisper-v3-turbo+LLaMA-3.2-3B |    4.45    |    3.82    | 49.28 | 51.37 |   60.66    | 69.71  |  98.08   |  70.66  |
-|  11  | Baichuan-Audio                |    4.41    |    4.08    | 45.84 | 53.19 |   71.65    | 50.31  |  99.42   |  70.03  |
-|  12  | VITA-1.5                      |    4.21    |    3.66    | 38.88 | 52.15 |   71.65    | 38.14  |  97.69   |  65.13  |
-|  13  | Phi-4-multimodal              |    3.81    |    3.82    | 39.78 | 42.19 |   65.93    | 45.35  |  100.00  |  63.69  |
-|  14  | MERaLiON                      |    4.50    |    3.77    | 55.06 | 34.95 |   27.23    | 62.93  |  94.81   |  62.91  |
-|  15  | Ola                           |    4.12    |    2.97    | 33.82 | 45.97 |   67.91    | 39.57  |  90.77   |  59.98  |
-|  16  | Lyra-Base                     |    3.85    |    3.50    | 38.25 | 49.74 |   72.75    | 36.28  |  59.62   |  57.66  |
-|  17  | Ultravox-v0.5-LLaMA-3.3-1B    |    4.04    |    3.57    | 34.72 | 30.03 |   35.60    | 45.56  |  96.92   |  56.43  |
-|  18  | GLM-4-Voice                   |    3.97    |    3.42    | 36.98 | 39.75 |   53.41    | 25.92  |  88.08   |  55.99  |
-|  19  | DiVA                          |    3.67    |    3.54    | 57.05 | 25.76 |   25.49    | 39.15  |  98.27   |  55.70  |
-|  20  | Qwen2-Audio                   |    3.74    |    3.43    | 35.71 | 35.72 |   49.45    | 26.33  |  96.73   |  55.35  |
-|  21  | Freeze-Omni                   |    4.03    |    3.46    | 53.45 | 28.14 |   30.98    | 23.40  |  97.30   |  54.72  |
-|  22  | KE-Omni-v1.5                  |    3.82    |    3.20    | 31.20 | 32.27 |   58.46    | 15.00  |  100.00  |  53.90  |
-|  23  | Step-Audio                    |    4.13    |    3.09    | 44.21 | 28.33 |   33.85    | 27.96  |  69.62   |  49.77  |
-|  24  | Megrez-3B-Omni                |    3.50    |    2.95    | 25.95 | 27.03 |   28.35    | 25.71  |  87.69   |  46.25  |
-|  25  | Lyra-Mini                     |    2.99    |    2.69    | 19.89 | 31.42 |   41.54    | 20.91  |  80.00   |  43.91  |
-|  26  | Ichigo                        |    3.79    |    3.17    | 36.53 | 25.63 |   26.59    | 21.59  |  57.50   |  43.86  |
-|  27  | LLaMA-Omni                    |    3.70    |    3.46    | 39.69 | 25.93 |   27.47    | 14.87  |  11.35   |  37.51  |
-|  28  | VITA-1.0                      |    3.38    |    2.15    | 27.94 | 25.70 |   29.01    | 22.82  |  26.73   |  34.68  |
-|  29  | SLAM-Omni                     |    1.90    |    1.79    | 4.16  | 26.06 |   25.27    | 13.38  |  94.23   |  33.84  |
-|  30  | Mini-Omni2                    |    2.32    |    2.18    | 9.31  | 24.27 |   26.59    | 11.56  |  57.50   |  31.32  |
-|  31  | Mini-Omni                     |    1.95    |    2.02    | 13.92 | 24.69 |   26.59    | 13.58  |  37.12   |  27.90  |
-|  32  | Moshi                         |    2.01    |    1.60    | 15.64 | 24.04 |   25.93    | 10.12  |  44.23   |  27.47  |
-
-
+|  7   | Qwen2.5-Omni-7B               |    4.49    |    3.93    | 55.71 | 61.32 |   81.10    | 52.87  |  99.42   |  74.12  |
+|  8   | MiniCPM-o                     |    4.42    |    4.15    | 50.72 | 54.78 |   78.02    | 49.25  |  97.69   |  71.69  |
+|  9   | Ultravox-v0.4.1-LLaMA-3.1-8B  |    4.55    |    3.90    | 53.35 | 47.17 |   65.27    | 66.88  |  98.46   |  71.45  |
+|  10  | Baichuan-Omni-1.5             |    4.50    |    4.05    | 43.40 | 57.25 |   74.51    | 54.54  |  97.31   |  71.14  |
+|  11  | Whisper-v3-turbo+LLaMA-3.2-3B |    4.45    |    3.82    | 49.28 | 51.37 |   60.66    | 69.71  |  98.08   |  70.66  |
+|  12  | Baichuan-Audio                |    4.41    |    4.08    | 45.84 | 53.19 |   71.65    | 50.31  |  99.42   |  70.03  |
+|  13  | VITA-1.5                      |    4.21    |    3.66    | 38.88 | 52.15 |   71.65    | 38.14  |  97.69   |  65.13  |
+|  14  | Phi-4-multimodal              |    3.81    |    3.82    | 39.78 | 42.19 |   65.93    | 45.35  |  100.00  |  63.69  |
+|  15  | MERaLiON                      |    4.50    |    3.77    | 55.06 | 34.95 |   27.23    | 62.93  |  94.81   |  62.91  |
+|  16  | Ola                           |    4.12    |    2.97    | 33.82 | 45.97 |   67.91    | 39.57  |  90.77   |  59.98  |
+|  17  | Lyra-Base                     |    3.85    |    3.50    | 38.25 | 49.74 |   72.75    | 36.28  |  59.62   |  57.66  |
+|  18  | Ultravox-v0.5-LLaMA-3.3-1B    |    4.04    |    3.57    | 34.72 | 30.03 |   35.60    | 45.56  |  96.92   |  56.43  |
+|  19  | GLM-4-Voice                   |    3.97    |    3.42    | 36.98 | 39.75 |   53.41    | 25.92  |  88.08   |  55.99  |
+|  20  | DiVA                          |    3.67    |    3.54    | 57.05 | 25.76 |   25.49    | 39.15  |  98.27   |  55.70  |
+|  21  | Qwen2-Audio                   |    3.74    |    3.43    | 35.71 | 35.72 |   49.45    | 26.33  |  96.73   |  55.35  |
+|  22  | Freeze-Omni                   |    4.03    |    3.46    | 53.45 | 28.14 |   30.98    | 23.40  |  97.30   |  54.72  |
+|  23  | KE-Omni-v1.5                  |    3.82    |    3.20    | 31.20 | 32.27 |   58.46    | 15.00  |  100.00  |  53.90  |
+|  24  | Step-Audio                    |    4.13    |    3.09    | 44.21 | 28.33 |   33.85    | 27.96  |  69.62   |  49.77  |
+|  25  | Megrez-3B-Omni                |    3.50    |    2.95    | 25.95 | 27.03 |   28.35    | 25.71  |  87.69   |  46.25  |
+|  26  | Lyra-Mini                     |    2.99    |    2.69    | 19.89 | 31.42 |   41.54    | 20.91  |  80.00   |  43.91  |
+|  27  | Ichigo                        |    3.79    |    3.17    | 36.53 | 25.63 |   26.59    | 21.59  |  57.50   |  43.86  |
+|  28  | LLaMA-Omni                    |    3.70    |    3.46    | 39.69 | 25.93 |   27.47    | 14.87  |  11.35   |  37.51  |
+|  29  | VITA-1.0                      |    3.38    |    2.15    | 27.94 | 25.70 |   29.01    | 22.82  |  26.73   |  34.68  |
+|  30  | SLAM-Omni                     |    1.90    |    1.79    | 4.16  | 26.06 |   25.27    | 13.38  |  94.23   |  33.84  |
+|  31  | Mini-Omni2                    |    2.32    |    2.18    | 9.31  | 24.27 |   26.59    | 11.56  |  57.50   |  31.32  |
+|  32  | Mini-Omni                     |    1.95    |    2.02    | 13.92 | 24.69 |   26.59    | 13.58  |  37.12   |  27.90  |
+|  33  | Moshi                         |    2.01    |    1.60    | 15.64 | 24.04 |   25.93    | 10.12  |  44.23   |  27.47  |
 
 
 
@@ -148,7 +147,8 @@ python evaluate.py --src_file result-naive-alpacaeval-test-audio.jsonl --evaluat
 ## Awesome Voice Assistants
 | Title                                                                                                                                                                                                                                                                                                                                        |    Date    |                            Code                             |
 |:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:----------:|:-----------------------------------------------------------:|
-| [**Phi-4-Mini Technical Report: Compact yet Powerful Multimodal Language Models via Mixture-of-LoRAs**](https://arxiv.org/abs/2503.01743)                                                                                                                                                                                                    | 2025-03-03 |                             --                              |
+| [**Qwen2.5-Omni Technical Report**](https://arxiv.org/abs/2503.20215) &nbsp; ![Star](https://img.shields.io/github/stars/QwenLM/Qwen2.5-Omni)                                                                                                                                                                                                | 2025-03-26 |  [Github](https://github.com/QwenLM/Qwen2.5-Omni)   |
+| [**Phi-4-Mini Technical Report: Compact yet Powerful Multimodal Language Models via Mixture-of-LoRAs**](https://arxiv.org/abs/2503.01743)                                                                                                                                                                                                    | 2025-03-03 |  [HF](https://huggingface.co/microsoft/Phi-4-multimodal-instruct)   |
 | [**Nexus-O: An Omni-Perceptive And -Interactive Model for Language, Audio, And Vision**](https://arxiv.org/abs/2503.01879)                                                                                                                                                                                                                   | 2025-02-26 |                             --                              |
 | [**M2-omni: Advancing Omni-MLLM for Comprehensive Modality Support with Competitive Performance**](https://arxiv.org/abs/2502.18778)                                                                                                                                                                                                         | 2025-02-26 |                             --                              |
 | [**Baichuan-Audio: A Unified Framework for End-to-End Speech Interaction**](https://arxiv.org/abs/2502.17239) &nbsp; ![Star](https://img.shields.io/github/stars/baichuan-inc/Baichuan-Audio)                                                                                                                                                | 2025-02-24 |  [Github](https://github.com/baichuan-inc/Baichuan-Audio)   |
@@ -165,7 +165,7 @@ python evaluate.py --src_file result-naive-alpacaeval-test-audio.jsonl --evaluat
 | [**VITA-1.5: Towards GPT-4o Level Real-Time Vision and Speech Interaction**](https://arxiv.org/abs/2501.01957v1) &nbsp; ![Star](https://img.shields.io/github/stars/VITA-MLLM/VITA.svg?style=social&label=Star)                                                                                                                              | 2025-01-03 |         [Github](https://github.com/VITA-MLLM/VITA)         |
 | [**OmniChat: Enhancing Spoken Dialogue Systems with Scalable Synthetic Data for Diverse Scenarios**](https://arxiv.org/abs/2501.01384)                                                                                                                                                                                                       | 2025-01-02 |                             --                              |
 | [**SLAM-Omni: Timbre-Controllable Voice Interaction System with Single-Stage Training**](https://arxiv.org/abs/2412.15649) &nbsp; ![Star](https://img.shields.io/github/stars/X-LANCE/SLAM-LLM.svg?style=social&label=Star)                                                                                                                  | 2024-12-20 |        [Github](https://github.com/X-LANCE/SLAM-LLM)        |
-| [**MERaLiON-AudioLLM: Bridging Audio and Language with Large Language Models**](https://arxiv.org/abs/2412.09818)                                                                                                                                                                                                                            | 2024-12-13 |                             --                              |
+| [**MERaLiON-AudioLLM: Bridging Audio and Language with Large Language Models**](https://arxiv.org/abs/2412.09818)                                                                                                                                                                                                                            | 2024-12-13 |     [HF](https://huggingface.co/MERaLiON/MERaLiON-AudioLLM-Whisper-SEA-LION)             |
 | [**Lyra: An Efficient and Speech-Centric Framework for Omni-Cognition**](https://arxiv.org/abs/2412.09501v1) &nbsp; ![Star](https://img.shields.io/github/stars/dvlab-research/Lyra.svg?style=social&label=Star)                                                                                                                             | 2024-12-12 |      [Github](https://github.com/dvlab-research/Lyra)       |
 | [**Continuous Speech Tokens Makes LLMs Robust Multi-Modality Learners**](https://arxiv.org/abs/2412.04917)                                                                                                                                                                                                                                   | 2024-12-06 |                             --                              |
 | [**GLM-4-Voice: Towards Intelligent and Human-Like End-to-End Spoken Chatbot**](https://arxiv.org/abs/2412.02612) &nbsp; ![Star](https://img.shields.io/github/stars/THUDM/GLM-4-Voice.svg?style=social&label=Star)                                                                                                                          | 2024-12-03 |       [Github](https://github.com/THUDM/GLM-4-Voice)        |
@@ -178,7 +178,7 @@ python evaluate.py --src_file result-naive-alpacaeval-test-audio.jsonl --evaluat
 | [**Mini-Omni2: Towards Open-source GPT-4o with Vision, Speech and Duplex Capabilities**](https://arxiv.org/abs/2410.11190) &nbsp; ![Star](https://img.shields.io/github/stars/gpt-omni/mini-omni2.svg?style=social&label=Star)                                                                                                               | 2024-10-15 |      [Github](https://github.com/gpt-omni/mini-omni2)       |
 | [**Baichuan-Omni Technical Report**](https://arxiv.org/abs/2410.08565)                                                                                                                                                                                                                                                                       | 2024-10-11 |                             --                              |
 | [**IntrinsicVoice: Empowering LLMs with Intrinsic Real-time Voice Interaction Abilities**](https://arxiv.org/abs/2410.08035)                                                                                                                                                                                                                 | 2024-10-09 |                             --                              |
-| [**Distilling an End-to-End Voice Assistant Without Instruction Training Data**](https://arxiv.org/abs/2410.02678)                                                                                                                                                                                                                           | 2024-10-03 |                             --                              |
+| [**Distilling an End-to-End Voice Assistant Without Instruction Training Data**](https://arxiv.org/abs/2410.02678)                                                                                                                                                                                                                           | 2024-10-03 |   [HF](https://huggingface.co/WillHeld/DiVA-llama-3-v0-8b)  |
 | [**EMOVA: Empowering Language Models to See, Hear and Speak with Vivid Emotions**](https://arxiv.org/abs/2409.18042)                                                                                                                                                                                                                         | 2024-09-26 |                             --                              |
 | [**Moshi: a Speech-Text Foundation Model for Real-Time Dialogue**](https://arxiv.org/abs/2410.00037) &nbsp; ![Star](https://img.shields.io/github/stars/kyutai-labs/moshi.svg?style=social&label=Star)                                                                                                                                       | 2024-09-17 |       [Github](https://github.com/kyutai-labs/moshi)        |
 | [**LLaMA-Omni: Seamless Speech Interaction with Large Language Models**](https://arxiv.org/abs/2409.06666) &nbsp; ![Star](https://img.shields.io/github/stars/ictnlp/LLaMA-Omni.svg?style=social&label=Star)                                                                                                                                 | 2024-09-10 |       [Github](https://github.com/ictnlp/LLaMA-Omni)        |

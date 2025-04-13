@@ -20,6 +20,8 @@ import dataclasses
 import json
 import os
 from typing import Dict, Optional, Sequence, Union
+
+import numpy as np
 from loguru import logger
 from .instruction_following_eval import instructions_registry
 
@@ -199,7 +201,7 @@ class IFEvaluator(Evaluator):
             outputs.append(test_instruction_following_loose(inp, prompt_to_response))
         for key, value in print_report(outputs).items():
             results[f"loose-{key}"] = value
-
+        results['final'] = np.mean(list(results.values()))
         return results
 
 

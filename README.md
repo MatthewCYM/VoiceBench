@@ -4,6 +4,7 @@ This repo contains the code and data of:
 [VoiceBench: Benchmarking LLM-Based Voice Assistants](https://arxiv.org/abs/2410.17196)
 
 ## News
+* **`2025.04.20`** Released `wildvoice`, a crowd-sourced dataset comprising human-recorded speech with diverse accents.
 * **`2025.04.12`** Released `bbh`, a crowd-sourced dataset comprising human-recorded speech, for evaluating the reasoning ability of voice assistants. 
 * **`2024.12.11`** Updated the VoiceBench Leaderboard to include `mmsu`.
 * **`2024.12.10`** Added a curated list of awesome voice assistants.
@@ -95,6 +96,7 @@ dataset = load_dataset("hlt-lab/voicebench", 'alpacaeval')
 | alpacaeval      |    199    |  Google TTS  |     Open-Ended QA     |
 | alpacaeval_full |    636    |  Google TTS  |     Open-Ended QA     |
 | commoneval      |    200    |    Human     |     Open-Ended QA     |
+| wildvoice       |   1,000   |    Human     |     Open-Ended QA     |
 | openbookqa      |    455    |  Google TTS  |  Multiple-Choice QA   |
 | mmsu            |   3,074   |  Google TTS  |  Multiple-Choice QA   |
 | sd-qa           |    553    |    Human     |  Reference-Based QA   |
@@ -125,7 +127,7 @@ python main.py --model naive --data alpacaeval --split test --modality audio
 This will generate the output and save it to a file named naive-alpacaeval-test-audio.jsonl.
 
 ### Step2: Automatic GPT-4 Evaluation
-For datasets `alpacaeval`, `commoneval`, and `sd-qa`, we use `gpt-4o-mini` to evaluate the responses. Run the following command to get the GPT score:
+For datasets `alpacaeval`, `commoneval`, `wildvoice`, and `sd-qa`, we use `gpt-4o-mini` to evaluate the responses. Run the following command to get the GPT score:
 ```shell
 python api_judge.py --src_file naive-alpacaeval-test-audio.jsonl
 ```
@@ -140,7 +142,7 @@ python evaluate.py --src_file result-naive-alpacaeval-test-audio.jsonl --evaluat
 ```
 **Supported Arguments:**
 - `--evaluator`: Specifies the evaluator type:
-    - Use `open` for `alpacaeval` and `commoneval`.
+    - Use `open` for `alpacaeval`, `commoneval`, and `wildvoice`.
     - Use `qa` for `sd-qa`.
     - Use `ifeval` for `ifeval`.
     - Use `harm` for `advbench`.

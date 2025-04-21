@@ -42,9 +42,17 @@ class BBHEvaluator(Evaluator):
             return 0
         elif "the correct adjective order is option (b)" in response:
             return 1
+        elif "the correct grammatical order is a" in response:
+            return 0
+        elif "the correct grammatical order is b" in response:
+            return 1
         elif "the correct sentence is option (a)" in response:
             return 0
         elif "the correct sentence is option (b)" in response:
+            return 1
+        elif "the sentence with the correct adjectives is a" in response:
+            return 0
+        elif "the sentence with the correct adjectives is b" in response:
             return 1
         elif "correct adjective order options is a" in response:
             return 0
@@ -57,6 +65,10 @@ class BBHEvaluator(Evaluator):
         elif "the correct option is (a)" in response:
             return 0
         elif "the correct option is (b)" in response:
+            return 1
+        elif "the correct order of adjectives in the sentence is option a" in response:
+            return 0
+        elif "the correct order of adjectives in the sentence is option b" in response:
             return 1
         elif "the correct sentence would be option (a)" in response:
             return 0
@@ -804,6 +816,8 @@ class BBHEvaluator(Evaluator):
         elif response.startswith('no'):
             return 0
         elif response.startswith('yes'):
+            return 1
+        elif response.startswith('the following sentence is plausible'):
             return 1
         elif response.endswith('no'):
             return 0

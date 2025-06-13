@@ -13,7 +13,7 @@ openai-whisper==20231117
 pandas==2.2.3
 peft==0.11.1
 protobuf==3.20.0
-qa_metrics==0.2.17
+qa_metrics==0.2.31
 sacrebleu==2.4.3
 safetensors==0.4.5
 scikit-learn==1.3.2

@@ -51,12 +51,13 @@ This repo contains the code and data of:
 |  25  | Megrez-3B-Omni                |    3.50    |    2.95    |   2.34    | 25.95 | 27.03 | 28.35 | 50.30 | 25.71  |  87.69   |  46.76  |
 |  26  | Ichigo                        |    3.79    |    3.17    |   2.83    | 36.53 | 25.63 | 26.59 | 46.50 | 21.59  |  57.50   |  45.57  |
 |  27  | Lyra-Mini                     |    2.99    |    2.69    |   2.58    | 19.89 | 31.42 | 41.54 | 48.40 | 20.91  |  80.00   |  45.26  |
-|  28  | LLaMA-Omni                    |    3.70    |    3.46    |   2.92    | 39.69 | 25.93 | 27.47 | 49.20 | 14.87  |  11.35   |  41.12  |
-|  29  | VITA-1.0                      |    3.38    |    2.15    |   1.87    | 27.94 | 25.70 | 29.01 | 47.70 | 22.82  |  26.73   |  36.43  |
-|  30  | SLAM-Omni                     |    1.90    |    1.79    |   1.60    | 4.16  | 26.06 | 25.27 | 48.80 | 13.38  |  94.23   |  35.30  |
-|  31  | Mini-Omni2                    |    2.32    |    2.18    |   1.79    | 9.31  | 24.27 | 26.59 | 46.40 | 11.56  |  57.50   |  33.49  |
-|  32  | Mini-Omni                     |    1.95    |    2.02    |   1.61    | 13.92 | 24.69 | 26.59 | 46.30 | 13.58  |  37.12   |  30.42  |
-|  33  | Moshi                         |    2.01    |    1.60    |   1.30    | 15.64 | 24.04 | 25.93 | 47.40 | 10.12  |  44.23   |  29.51  |
+|  28  | Mair-hub-0.5B-Omni            |    3.06    |    2.87    |   2.48    | 21.70 | 25.60 | 25.27 | 50.90 | 14.85  |  94.81   |  44.59  |
+|  29  | LLaMA-Omni                    |    3.70    |    3.46    |   2.92    | 39.69 | 25.93 | 27.47 | 49.20 | 14.87  |  11.35   |  41.12  |
+|  30  | VITA-1.0                      |    3.38    |    2.15    |   1.87    | 27.94 | 25.70 | 29.01 | 47.70 | 22.82  |  26.73   |  36.43  |
+|  31  | SLAM-Omni                     |    1.90    |    1.79    |   1.60    | 4.16  | 26.06 | 25.27 | 48.80 | 13.38  |  94.23   |  35.30  |
+|  32  | Mini-Omni2                    |    2.32    |    2.18    |   1.79    | 9.31  | 24.27 | 26.59 | 46.40 | 11.56  |  57.50   |  33.49  |
+|  33  | Mini-Omni                     |    1.95    |    2.02    |   1.61    | 13.92 | 24.69 | 26.59 | 46.30 | 13.58  |  37.12   |  30.42  |
+|  34  | Moshi                         |    2.01    |    1.60    |   1.30    | 15.64 | 24.04 | 25.93 | 47.40 | 10.12  |  44.23   |  29.51  |
 
 
 [//]: # (|      | KE-Omni-v1.5                  |    3.82    |    3.20    | 31.20 | 32.27 |    58.46   |       |  15.00 |  100.00  |         |)
@@ -155,6 +156,7 @@ python evaluate.py --src_file result-naive-alpacaeval-test-audio.jsonl --evaluat
 ## Awesome Voice Assistants
 | Title                                                                                                                                                                                                                                                                                                                                        |    Date    |                                   Code                                   |
 |:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:----------:|:------------------------------------------------------------------------:|
+| [**Stream-Omni: Simultaneous Multimodal Interactions with Large Language-Vision-Speech Model**](https://arxiv.org/abs/2506.13642) &nbsp; ![Star](https://img.shields.io/github/stars/ictnlp/Stream-Omni)                                                                                                                                     | 2025-06-16 |             [Github](https://github.com/ictnlp/Stream-Omni)              |
 | [**Ming-Omni: A Unified Multimodal Model for Perception and Generation**](https://arxiv.org/abs/2506.09344) &nbsp; ![Star](https://img.shields.io/github/stars/inclusionAI/Ming)                                                                                                                                                             | 2025-06-11 |             [Github](https://github.com/inclusionAI/Ming)                |
 | [**Step-Audio-AQAA: a Fully End-to-End Expressive Large Audio Language Model**](https://arxiv.org/abs/2506.08967)                                                                                                                                                                                                                            | 2025-06-10 |                                    --                                    |
 | [**VITA-Audio: Fast Interleaved Cross-Modal Token Generation for Efficient Large Speech-Language Model**](https://arxiv.org/abs/2505.03739) &nbsp; ![Star](https://img.shields.io/github/stars/VITA-MLLM/VITA-Audio)                                                                                                                         | 2025-05-06 |             [Github](https://github.com/VITA-MLLM/VITA-Audio)            |

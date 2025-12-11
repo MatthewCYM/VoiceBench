@@ -33,7 +33,7 @@ class BBHEvaluator(Evaluator):
         if response == 'a':
             return 0
         elif response == 'b':
-            return 0
+            return 1
         elif "the answer is (a)" in response:
             return 0
         elif "the answer is (b)" in response:
@@ -844,3 +844,4 @@ class BBHEvaluator(Evaluator):
         return {
             'acc': accuracy * 100
         }
+

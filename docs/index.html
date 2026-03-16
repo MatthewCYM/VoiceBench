@@ -114,6 +114,10 @@ section{padding:32px 0}section+section{padding-top:0}
 .about-card{background:#fff;border:1px solid #e2e8f0;border-radius:10px;padding:20px 24px}
 .about-card h2{font-size:1.1rem;font-weight:700;margin-bottom:8px;color:#0f172a}
 .about-card p{color:#475569;font-size:.88rem;line-height:1.7}
+.citation-inline{margin-top:18px;padding-top:16px;border-top:1px solid #e2e8f0}
+.citation-inline h3{font-size:.98rem;font-weight:700;margin-bottom:8px;color:#0f172a}
+.citation-inline .citation-note{margin-bottom:10px;font-size:.86rem;color:#475569}
+.citation-inline pre{background:#0f172a;color:#e2e8f0;padding:16px;border-radius:12px;overflow:auto;white-space:pre-wrap;word-break:break-word;font-size:.88rem;line-height:1.5}
 
 /* Legend */
 .legend{display:flex;flex-wrap:wrap;gap:16px;margin-bottom:14px;font-size:.75rem;color:#64748b}
@@ -140,7 +144,7 @@ footer{border-top:1px solid #e2e8f0;padding:20px 0;text-align:center;font-size:.
     <p class="sub">Benchmarking LLM-Based Voice Assistants &middot; 38 Models &middot; 4 Architecture Types &middot; Click cards to filter</p>
     <div class="links">
       <a class="primary" href="https://github.com/MatthewCYM/VoiceBench" target="_blank">GitHub &rarr;</a>
-      <a class="secondary" href="https://arxiv.org/abs/2410.17196" target="_blank">Paper (TACL) &rarr;</a>
+      <a class="secondary" href="https://arxiv.org/abs/2410.17196" target="_blank">Paper &rarr;</a>
       <a class="secondary" href="https://huggingface.co/datasets/hlt-lab/voicebench" target="_blank">Dataset &rarr;</a>
     </div>
   </div>
@@ -453,9 +457,8 @@ footer{border-top:1px solid #e2e8f0;padding:20px 0;text-align:center;font-size:.
   <div class="about-card">
     <h2>About VoiceBench</h2>
     <p>
-      A comprehensive benchmark for LLM-based voice assistants across <strong>10 evaluation dimensions</strong>,
+      A comprehensive benchmark for LLM-based voice assistants across <strong>9 evaluation datasets</strong>,
       covering diverse speaker characteristics, environmental factors, and content variations.
-      Apache 2.0 &middot; <a href="https://arxiv.org/abs/2410.17196" target="_blank"><strong>TACL</strong></a>.
       To submit your model, open an <a href="https://github.com/MatthewCYM/VoiceBench/issues">issue</a> on GitHub.
     </p>
     <p style="margin-top:10px;font-size:.82rem;color:#94a3b8">
@@ -465,6 +468,16 @@ footer{border-top:1px solid #e2e8f0;padding:20px 0;text-align:center;font-size:.
       <strong style="color:#475569">Omni</strong> = end-to-end speech-in speech-out, turn-based &middot;
       <strong style="color:#059669">S2S / Full-Duplex</strong> = simultaneous listen &amp; speak, no external VAD
     </p>
+    <div class="citation-inline">
+      <h3>Citation</h3>
+      <p class="citation-note">If you use <strong>VoiceBench</strong> in your research, please cite the following paper:</p>
+      <pre>@article{chen2024voicebench,
+  title={VoiceBench: Benchmarking LLM-Based Voice Assistants},
+  author={Chen, Yiming and Yue, Xianghu and Zhang, Chen and Gao, Xiaoxue and Tan, Robby T. and Li, Haizhou},
+  journal={arXiv preprint arXiv:2410.17196},
+  year={2024}
+}</pre>
+    </div>
   </div>
 </section>
 </div>
@@ -574,5 +587,6 @@ footer{border-top:1px solid #e2e8f0;padding:20px 0;text-align:center;font-size:.
   applyFilters();
 })();
 </script>
+
 </body>
 </html>

@@ -1,7 +1,14 @@
-# VoiceBench
+<h1 align="center">VoiceBench: Benchmarking LLM-Based Voice Assistants</h1>
 
-This repo contains the code and data of:
-[VoiceBench: Benchmarking LLM-Based Voice Assistants](https://arxiv.org/abs/2410.17196)
+<p align="center">
+  <a href="https://matthewcym.github.io/VoiceBench/">🏆 Leaderboard</a> |
+  <a href="https://arxiv.org/abs/2410.17196">📄 Paper</a> |
+  <a href="https://huggingface.co/datasets/hlt-lab/voicebench">🤗 Data</a>
+</p>
+
+
+> We encourage new result submissions through the [issue tracker](https://github.com/matthewcym/VoiceBench/issues). The leaderboard will be updated accordingly.
+
 
 ## News
 * **`2025.04.20`** Released `wildvoice`, a crowd-sourced dataset comprising human-recorded speech with diverse accents.
@@ -13,62 +20,12 @@ This repo contains the code and data of:
 * **`2024.10.30`** Expanded the test samples in VoiceBench to include: 1) the complete set of open-ended QA from `alpacaeval`, and 2) multiple-choice QA from `openbookqa`.
 
 ## Table of Contents
-- [**Leaderboard**](#leaderboard)
 - [**Setup**](#setup)
 - [**Dataset**](#dataset)
 - [**Evaluation**](#evaluation)
 - [**Awesome Voice Assistants**](#awesome-voice-assistants)
 - [**Citation**](#citation)
 
-## Leaderboard
-
-| Rank | Model                         | AlpacaEval | CommonEval | WildVoice | SD-QA | MMSU  | OBQA  | BBH   | IFEval | AdvBench | Overall |
-|:----:|-------------------------------|:----------:|:----------:|:---------:|:-----:|:-----:|:-----:|:-----:|:------:|:--------:|:-------:|
-|  1   | Ultravox-GLM-4P7              |    4.87    |    4.30    |   4.55    | 84.15 | 83.82 | 94.72 | 87.16 | 76.26  |  99.23   |  88.86  |
-|  2   | Ultravox-GLM-4P7 (thinking)   |    4.69    |    4.05    |   4.21    | 88.57 | 87.15 | 95.01 | 89.78 | 80.99  |  98.46   |  88.79  |
-|  3   | Whisper-v3-large+GPT-4o       |    4.80    |    4.47    |   4.62    | 75.77 | 81.69 | 92.97 | 87.20 | 76.51  |  98.27   |  87.80  |
-|  4   | Ultravox-GLM-4P6              |    4.93    |    4.42    |   4.57    | 84.24 | 80.40 | 89.45 | 81.48 | 75.59  |  99.23   |  87.05  |
-|  5   | GPT-4o-Audio                  |    4.78    |    4.49    |   4.58    | 75.50 | 80.25 | 89.23 | 84.10 | 76.02  |  98.65   |  86.75  |
-|  6   | GPT-4o-mini-Audio             |    4.75    |    4.24    |   4.40    | 67.36 | 72.90 | 84.84 | 81.50 | 72.90  |  98.27   |  82.84  |
-|  7   | Ultravox-v0.6-LLaMA-3.3-70B   |    4.69    |    4.26    |   4.38    | 82.60 | 69.20 | 86.40 | 78.80 | 61.50  |  91.20   |  81.81  |
-|  8   | Parakeet-TDT-0.6b-V2+Qwen3-8B |    4.68    |    4.46    |   4.35    | 47.47 | 59.10 | 80.00 | 77.90 | 78.99  |  99.81   |  79.23  |
-|  9   | Whisper-v3-large+LLaMA-3.1-8B |    4.53    |    4.04    |   4.16    | 70.43 | 62.43 | 72.53 | 69.70 | 69.53  |  98.08   |  77.48  |
-|  10  | Kimi-Audio                    |    4.46    |    3.97    |   4.20    | 63.12 | 62.17 | 83.52 | 69.70 | 61.10  |  100.00  |  76.91  |
-|  11  | Whisper-v3-turbo+LLaMA-3.1-8B |    4.55    |    4.02    |   4.12    | 58.23 | 62.04 | 72.09 | 69.10 | 71.12  |  98.46   |  76.09  |
-|  10  | Ultravox-v0.5-LLaMA-3.1-8B    |    4.59    |    4.11    |   4.28    | 58.68 | 54.16 | 68.35 | 67.80 | 66.51  |  98.65   |  74.86  |
-|  11  | Ultravox-v0.4.1-LLaMA-3.1-8B  |    4.55    |    3.90    |   4.12    | 53.35 | 47.17 | 65.27 | 66.30 | 66.88  |  98.46   |  72.09  |
-|  12  | Baichuan-Omni-1.5             |    4.50    |    4.05    |   4.06    | 43.40 | 57.25 | 74.51 | 62.70 | 54.54  |  97.31   |  71.32  |
-|  13  | MiniCPM-o                     |    4.42    |    4.15    |   3.94    | 50.72 | 54.78 | 78.02 | 60.40 | 49.25  |  97.69   |  71.23  |
-|  14  | Whisper-v3-turbo+LLaMA-3.2-3B |    4.45    |    3.82    |   4.04    | 49.28 | 51.37 | 60.66 | 63.90 | 69.71  |  98.08   |  71.02  |
-|  15  | Baichuan-Audio                |    4.41    |    4.08    |   3.92    | 45.84 | 53.19 | 71.65 | 54.80 | 50.31  |  99.42   |  69.27  |
-|  16  | MERaLiON                      |    4.50    |    3.77    |   4.12    | 55.06 | 34.95 | 27.23 | 62.60 | 62.93  |  94.81   |  65.04  |
-|  17  | VITA-1.5                      |    4.21    |    3.66    |   3.48    | 38.88 | 52.15 | 71.65 | 55.30 | 38.14  |  97.69   |  64.53  |
-|  18  | Phi-4-multimodal              |    3.81    |    3.82    |   3.56    | 39.78 | 42.19 | 65.93 | 61.80 | 45.35  |  100.00  |  64.32  |
-|  19  | Ola                           |    4.12    |    2.97    |   3.19    | 33.82 | 45.97 | 67.91 | 51.10 | 39.57  |  90.77   |  59.42  |
-|  20  | Lyra-Base                     |    3.85    |    3.50    |   3.42    | 38.25 | 49.74 | 72.75 | 59.00 | 36.28  |  59.62   |  59.00  |
-|  21  | Ultravox-v0.5-LLaMA-3.2-1B    |    4.04    |    3.57    |   3.47    | 34.72 | 30.03 | 35.60 | 52.70 | 45.56  |  96.92   |  57.46  |
-|  22  | DiVA                          |    3.67    |    3.54    |   3.74    | 57.05 | 25.76 | 25.49 | 51.80 | 39.15  |  98.27   |  57.39  |
-|  23  | GLM-4-Voice                   |    3.97    |    3.42    |   3.18    | 36.98 | 39.75 | 53.41 | 52.80 | 25.92  |  88.08   |  56.48  |
-|  24  | Qwen2-Audio                   |    3.74    |    3.43    |   3.01    | 35.71 | 35.72 | 49.45 | 54.70 | 26.33  |  96.73   |  55.80  |
-|  25  | Freeze-Omni                   |    4.03    |    3.46    |   3.15    | 53.45 | 28.14 | 30.98 | 50.70 | 23.40  |  97.30   |  55.20  |
-|  26  | Step-Audio                    |    4.13    |    3.09    |   2.93    | 44.21 | 28.33 | 33.85 | 50.60 | 27.96  |  69.62   |  50.84  |
-|  27  | Megrez-3B-Omni                |    3.50    |    2.95    |   2.34    | 25.95 | 27.03 | 28.35 | 50.30 | 25.71  |  87.69   |  46.76  |
-|  28  | Ichigo                        |    3.79    |    3.17    |   2.83    | 36.53 | 25.63 | 26.59 | 46.50 | 21.59  |  57.50   |  45.57  |
-|  29  | Lyra-Mini                     |    2.99    |    2.69    |   2.58    | 19.89 | 31.42 | 41.54 | 48.40 | 20.91  |  80.00   |  45.26  |
-|  30  | Mair-hub-0.5B-Omni            |    3.06    |    2.87    |   2.48    | 21.70 | 25.60 | 25.27 | 50.90 | 14.85  |  94.81   |  44.59  |
-|  31  | LLaMA-Omni                    |    3.70    |    3.46    |   2.92    | 39.69 | 25.93 | 27.47 | 49.20 | 14.87  |  11.35   |  41.12  |
-|  32  | VITA-1.0                      |    3.38    |    2.15    |   1.87    | 27.94 | 25.70 | 29.01 | 47.70 | 22.82  |  26.73   |  36.43  |
-|  33  | SLAM-Omni                     |    1.90    |    1.79    |   1.60    | 4.16  | 26.06 | 25.27 | 48.80 | 13.38  |  94.23   |  35.30  |
-|  34  | Mini-Omni2                    |    2.32    |    2.18    |   1.79    | 9.31  | 24.27 | 26.59 | 46.40 | 11.56  |  57.50   |  33.49  |
-|  35  | Mini-Omni                     |    1.95    |    2.02    |   1.61    | 13.92 | 24.69 | 26.59 | 46.30 | 13.58  |  37.12   |  30.42  |
-|  36  | Moshi                         |    2.01    |    1.60    |   1.30    | 15.64 | 24.04 | 25.93 | 47.40 | 10.12  |  44.23   |  29.51  |
-
-
-[//]: # (|      | KE-Omni-v1.5                  |    3.82    |    3.20    | 31.20 | 32.27 |    58.46   |       |  15.00 |  100.00  |         |)
-
-
-
-We encourage you to submit new voice assistant results directly through the issue tracker. The ranking list will be updated accordingly.
 
 ## Setup
 ```shell

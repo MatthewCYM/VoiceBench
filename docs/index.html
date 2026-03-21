@@ -141,7 +141,7 @@ footer{border-top:1px solid #e2e8f0;padding:20px 0;text-align:center;font-size:.
 <header class="hero">
   <div class="container">
     <h1>VoiceBench &mdash; <span>Leaderboard</span></h1>
-    <p class="sub">Benchmarking LLM-Based Voice Assistants &middot; 38 Models &middot; 4 Architecture Types &middot; Click cards to filter</p>
+    <p class="sub">Benchmarking LLM-Based Voice Assistants &middot; 39 Models &middot; 4 Architecture Types &middot; Click cards to filter</p>
     <div class="links">
       <a class="primary" href="https://github.com/MatthewCYM/VoiceBench" target="_blank">GitHub &rarr;</a>
       <a class="secondary" href="https://arxiv.org/abs/2410.17196" target="_blank">Paper &rarr;</a>
@@ -156,7 +156,7 @@ footer{border-top:1px solid #e2e8f0;padding:20px 0;text-align:center;font-size:.
   <!-- Architecture filter cards -->
   <div class="filter-cards">
     <div class="fc active" data-arch="all">
-      <div class="fc-count">38</div>
+      <div class="fc-count">39</div>
       <div class="fc-label">All Models</div>
       <div class="fc-desc">Full leaderboard</div>
       <div class="fc-best">#1: <strong>Ultravox-GLM-4P7 (88.9)</strong></div>
@@ -180,18 +180,18 @@ footer{border-top:1px solid #e2e8f0;padding:20px 0;text-align:center;font-size:.
       <div class="fc-best">#1: <strong>GPT-4o-Audio (86.8)</strong></div>
     </div>
     <div class="fc" data-arch="fullduplex">
-      <div class="fc-count">2</div>
+      <div class="fc-count">3</div>
       <div class="fc-label">S2S / Full-Duplex</div>
       <div class="fc-desc">Simultaneous listen &amp; speak</div>
-      <div class="fc-best">#1: <strong>Freeze-Omni (55.2)</strong></div>
+      <div class="fc-best">#1: <strong>Nemotron 3 VoiceChat (V1) (58.1)</strong></div>
     </div>
   </div>
 
   <!-- Open / Closed toggle -->
   <div class="open-toggle">
     <span class="ot-label">Weights:</span>
-    <span class="pill active" data-val="all" id="pill-all">All (38)</span>
-    <span class="pill" data-val="open" id="pill-open">Open (35)</span>
+    <span class="pill active" data-val="all" id="pill-all">All (39)</span>
+    <span class="pill" data-val="open" id="pill-open">Open (36)</span>
     <span class="pill" data-val="closed" id="pill-closed">Closed (3)</span>
   </div>
 
@@ -349,98 +349,104 @@ footer{border-top:1px solid #e2e8f0;padding:20px 0;text-align:center;font-size:.
 <td class="dim">3.85</td><td class="dim">3.50</td><td class="dim">3.42</td><td class="dim">38.25</td><td class="dim">49.74</td><td class="dim">72.75</td><td class="dim">59.00</td><td class="dim">36.28</td><td class="dim">59.62</td>
 <td class="overall-score">59.00</td><td class="cat-rank-cell">&mdash;</td>
 </tr>
-<tr data-arch="audiollm" data-open="open" data-rank="23" data-overall="57.46">
+<tr class="row-fd" data-arch="fullduplex" data-open="open" data-rank="23" data-overall="58.10">
 <td><span class="rank rank-default" data-orig="23">23</span></td>
+<td class="model-cell"><span class="model-name">Nemotron 3 VoiceChat (V1)</span><span class="badges"><span class="badge b-fd">S2S / Full-Duplex</span><span class="badge b-open">Open</span></span></td>
+<td class="dim">3.59</td><td class="dim">3.12</td><td class="dim">3.06</td><td class="dim">43.40</td><td class="dim">50.46</td><td class="dim">64.40</td><td class="dim">52.70</td><td class="dim">17.12</td><td class="dim">99.62</td>
+<td class="overall-score">58.10</td><td class="cat-rank-cell">&mdash;</td>
+</tr>
+<tr data-arch="audiollm" data-open="open" data-rank="24" data-overall="57.46">
+<td><span class="rank rank-default" data-orig="24">24</span></td>
 <td class="model-cell"><span class="model-name">Ultravox-v0.5-LLaMA-3.2-1B</span><span class="badges"><span class="badge b-allm">Audio-LLM</span><span class="badge b-open">Open</span></span></td>
 <td class="dim">4.04</td><td class="dim">3.57</td><td class="dim">3.47</td><td class="dim">34.72</td><td class="dim">30.03</td><td class="dim">35.60</td><td class="dim">52.70</td><td class="dim">45.56</td><td class="dim">96.92</td>
 <td class="overall-score">57.46</td><td class="cat-rank-cell">&mdash;</td>
 </tr>
-<tr data-arch="audiollm" data-open="open" data-rank="24" data-overall="57.39">
-<td><span class="rank rank-default" data-orig="24">24</span></td>
+<tr data-arch="audiollm" data-open="open" data-rank="25" data-overall="57.39">
+<td><span class="rank rank-default" data-orig="25">25</span></td>
 <td class="model-cell"><span class="model-name">DiVA</span><span class="badges"><span class="badge b-allm">Audio-LLM</span><span class="badge b-open">Open</span></span></td>
 <td class="dim">3.67</td><td class="dim">3.54</td><td class="dim">3.74</td><td class="dim">57.05</td><td class="dim">25.76</td><td class="dim">25.49</td><td class="dim">51.80</td><td class="dim">39.15</td><td class="dim">98.27</td>
 <td class="overall-score">57.39</td><td class="cat-rank-cell">&mdash;</td>
 </tr>
-<tr data-arch="omni_hd" data-open="open" data-rank="25" data-overall="56.48">
-<td><span class="rank rank-default" data-orig="25">25</span></td>
+<tr data-arch="omni_hd" data-open="open" data-rank="26" data-overall="56.48">
+<td><span class="rank rank-default" data-orig="26">26</span></td>
 <td class="model-cell"><span class="model-name">GLM-4-Voice</span><span class="badges"><span class="badge b-omni">Omni</span><span class="badge b-open">Open</span></span></td>
 <td class="dim">3.97</td><td class="dim">3.42</td><td class="dim">3.18</td><td class="dim">36.98</td><td class="dim">39.75</td><td class="dim">53.41</td><td class="dim">52.80</td><td class="dim">25.92</td><td class="dim">88.08</td>
 <td class="overall-score">56.48</td><td class="cat-rank-cell">&mdash;</td>
 </tr>
-<tr data-arch="audiollm" data-open="open" data-rank="26" data-overall="55.80">
-<td><span class="rank rank-default" data-orig="26">26</span></td>
+<tr data-arch="audiollm" data-open="open" data-rank="27" data-overall="55.80">
+<td><span class="rank rank-default" data-orig="27">27</span></td>
 <td class="model-cell"><span class="model-name">Qwen2-Audio</span><span class="badges"><span class="badge b-allm">Audio-LLM</span><span class="badge b-open">Open</span></span></td>
 <td class="dim">3.74</td><td class="dim">3.43</td><td class="dim">3.01</td><td class="dim">35.71</td><td class="dim">35.72</td><td class="dim">49.45</td><td class="dim">54.70</td><td class="dim">26.33</td><td class="dim">96.73</td>
 <td class="overall-score">55.80</td><td class="cat-rank-cell">&mdash;</td>
 </tr>
-<tr class="row-fd" data-arch="fullduplex" data-open="open" data-rank="27" data-overall="55.20">
-<td><span class="rank rank-default" data-orig="27">27</span></td>
+<tr class="row-fd" data-arch="fullduplex" data-open="open" data-rank="28" data-overall="55.20">
+<td><span class="rank rank-default" data-orig="28">28</span></td>
 <td class="model-cell"><span class="model-name">Freeze-Omni</span><span class="badges"><span class="badge b-fd">S2S / Full-Duplex</span><span class="badge b-open">Open</span></span></td>
 <td class="dim">4.03</td><td class="dim">3.46</td><td class="dim">3.15</td><td class="dim">53.45</td><td class="dim">28.14</td><td class="dim">30.98</td><td class="dim">50.70</td><td class="dim">23.40</td><td class="dim">97.30</td>
 <td class="overall-score">55.20</td><td class="cat-rank-cell">&mdash;</td>
 </tr>
-<tr data-arch="omni_hd" data-open="open" data-rank="28" data-overall="50.84">
-<td><span class="rank rank-default" data-orig="28">28</span></td>
+<tr data-arch="omni_hd" data-open="open" data-rank="29" data-overall="50.84">
+<td><span class="rank rank-default" data-orig="29">29</span></td>
 <td class="model-cell"><span class="model-name">Step-Audio</span><span class="badges"><span class="badge b-omni">Omni</span><span class="badge b-open">Open</span></span></td>
 <td class="dim">4.13</td><td class="dim">3.09</td><td class="dim">2.93</td><td class="dim">44.21</td><td class="dim">28.33</td><td class="dim">33.85</td><td class="dim">50.60</td><td class="dim">27.96</td><td class="dim">69.62</td>
 <td class="overall-score">50.84</td><td class="cat-rank-cell">&mdash;</td>
 </tr>
-<tr data-arch="omni_hd" data-open="open" data-rank="29" data-overall="46.76">
-<td><span class="rank rank-default" data-orig="29">29</span></td>
+<tr data-arch="omni_hd" data-open="open" data-rank="30" data-overall="46.76">
+<td><span class="rank rank-default" data-orig="30">30</span></td>
 <td class="model-cell"><span class="model-name">Megrez-3B-Omni</span><span class="badges"><span class="badge b-omni">Omni</span><span class="badge b-open">Open</span></span></td>
 <td class="dim">3.50</td><td class="dim">2.95</td><td class="dim">2.34</td><td class="dim">25.95</td><td class="dim">27.03</td><td class="dim">28.35</td><td class="dim">50.30</td><td class="dim">25.71</td><td class="dim">87.69</td>
 <td class="overall-score">46.76</td><td class="cat-rank-cell">&mdash;</td>
 </tr>
-<tr data-arch="omni_hd" data-open="open" data-rank="30" data-overall="45.57">
-<td><span class="rank rank-default" data-orig="30">30</span></td>
+<tr data-arch="omni_hd" data-open="open" data-rank="31" data-overall="45.57">
+<td><span class="rank rank-default" data-orig="31">31</span></td>
 <td class="model-cell"><span class="model-name">Ichigo</span><span class="badges"><span class="badge b-omni">Omni</span><span class="badge b-open">Open</span></span></td>
 <td class="dim">3.79</td><td class="dim">3.17</td><td class="dim">2.83</td><td class="dim">36.53</td><td class="dim">25.63</td><td class="dim">26.59</td><td class="dim">46.50</td><td class="dim">21.59</td><td class="dim">57.50</td>
 <td class="overall-score">45.57</td><td class="cat-rank-cell">&mdash;</td>
 </tr>
-<tr data-arch="omni_hd" data-open="open" data-rank="31" data-overall="45.26">
-<td><span class="rank rank-default" data-orig="31">31</span></td>
+<tr data-arch="omni_hd" data-open="open" data-rank="32" data-overall="45.26">
+<td><span class="rank rank-default" data-orig="32">32</span></td>
 <td class="model-cell"><span class="model-name">Lyra-Mini</span><span class="badges"><span class="badge b-omni">Omni</span><span class="badge b-open">Open</span></span></td>
 <td class="dim">2.99</td><td class="dim">2.69</td><td class="dim">2.58</td><td class="dim">19.89</td><td class="dim">31.42</td><td class="dim">41.54</td><td class="dim">48.40</td><td class="dim">20.91</td><td class="dim">80.00</td>
 <td class="overall-score">45.26</td><td class="cat-rank-cell">&mdash;</td>
 </tr>
-<tr data-arch="omni_hd" data-open="open" data-rank="32" data-overall="44.59">
-<td><span class="rank rank-default" data-orig="32">32</span></td>
+<tr data-arch="omni_hd" data-open="open" data-rank="33" data-overall="44.59">
+<td><span class="rank rank-default" data-orig="33">33</span></td>
 <td class="model-cell"><span class="model-name">Mair-hub-0.5B-Omni</span><span class="badges"><span class="badge b-omni">Omni</span><span class="badge b-open">Open</span></span></td>
 <td class="dim">3.06</td><td class="dim">2.87</td><td class="dim">2.48</td><td class="dim">21.70</td><td class="dim">25.60</td><td class="dim">25.27</td><td class="dim">50.90</td><td class="dim">14.85</td><td class="dim">94.81</td>
 <td class="overall-score">44.59</td><td class="cat-rank-cell">&mdash;</td>
 </tr>
-<tr data-arch="omni_hd" data-open="open" data-rank="33" data-overall="41.12">
-<td><span class="rank rank-default" data-orig="33">33</span></td>
+<tr data-arch="omni_hd" data-open="open" data-rank="34" data-overall="41.12">
+<td><span class="rank rank-default" data-orig="34">34</span></td>
 <td class="model-cell"><span class="model-name">LLaMA-Omni</span><span class="badges"><span class="badge b-omni">Omni</span><span class="badge b-open">Open</span></span></td>
 <td class="dim">3.70</td><td class="dim">3.46</td><td class="dim">2.92</td><td class="dim">39.69</td><td class="dim">25.93</td><td class="dim">27.47</td><td class="dim">49.20</td><td class="dim">14.87</td><td class="dim">11.35</td>
 <td class="overall-score">41.12</td><td class="cat-rank-cell">&mdash;</td>
 </tr>
-<tr data-arch="omni_hd" data-open="open" data-rank="34" data-overall="36.43">
-<td><span class="rank rank-default" data-orig="34">34</span></td>
+<tr data-arch="omni_hd" data-open="open" data-rank="35" data-overall="36.43">
+<td><span class="rank rank-default" data-orig="35">35</span></td>
 <td class="model-cell"><span class="model-name">VITA-1.0</span><span class="badges"><span class="badge b-omni">Omni</span><span class="badge b-open">Open</span></span></td>
 <td class="dim">3.38</td><td class="dim">2.15</td><td class="dim">1.87</td><td class="dim">27.94</td><td class="dim">25.70</td><td class="dim">29.01</td><td class="dim">47.70</td><td class="dim">22.82</td><td class="dim">26.73</td>
 <td class="overall-score">36.43</td><td class="cat-rank-cell">&mdash;</td>
 </tr>
-<tr data-arch="omni_hd" data-open="open" data-rank="35" data-overall="35.30">
-<td><span class="rank rank-default" data-orig="35">35</span></td>
+<tr data-arch="omni_hd" data-open="open" data-rank="36" data-overall="35.30">
+<td><span class="rank rank-default" data-orig="36">36</span></td>
 <td class="model-cell"><span class="model-name">SLAM-Omni</span><span class="badges"><span class="badge b-omni">Omni</span><span class="badge b-open">Open</span></span></td>
 <td class="dim">1.90</td><td class="dim">1.79</td><td class="dim">1.60</td><td class="dim">4.16</td><td class="dim">26.06</td><td class="dim">25.27</td><td class="dim">48.80</td><td class="dim">13.38</td><td class="dim">94.23</td>
 <td class="overall-score">35.30</td><td class="cat-rank-cell">&mdash;</td>
 </tr>
-<tr data-arch="omni_hd" data-open="open" data-rank="36" data-overall="33.49">
-<td><span class="rank rank-default" data-orig="36">36</span></td>
+<tr data-arch="omni_hd" data-open="open" data-rank="37" data-overall="33.49">
+<td><span class="rank rank-default" data-orig="37">37</span></td>
 <td class="model-cell"><span class="model-name">Mini-Omni2</span><span class="badges"><span class="badge b-omni">Omni</span><span class="badge b-open">Open</span></span></td>
 <td class="dim">2.32</td><td class="dim">2.18</td><td class="dim">1.79</td><td class="dim">9.31</td><td class="dim">24.27</td><td class="dim">26.59</td><td class="dim">46.40</td><td class="dim">11.56</td><td class="dim">57.50</td>
 <td class="overall-score">33.49</td><td class="cat-rank-cell">&mdash;</td>
 </tr>
-<tr data-arch="omni_hd" data-open="open" data-rank="37" data-overall="30.42">
-<td><span class="rank rank-default" data-orig="37">37</span></td>
+<tr data-arch="omni_hd" data-open="open" data-rank="38" data-overall="30.42">
+<td><span class="rank rank-default" data-orig="38">38</span></td>
 <td class="model-cell"><span class="model-name">Mini-Omni</span><span class="badges"><span class="badge b-omni">Omni</span><span class="badge b-open">Open</span></span></td>
 <td class="dim">1.95</td><td class="dim">2.02</td><td class="dim">1.61</td><td class="dim">13.92</td><td class="dim">24.69</td><td class="dim">26.59</td><td class="dim">46.30</td><td class="dim">13.58</td><td class="dim">37.12</td>
 <td class="overall-score">30.42</td><td class="cat-rank-cell">&mdash;</td>
 </tr>
-<tr class="row-fd" data-arch="fullduplex" data-open="open" data-rank="38" data-overall="29.51">
-<td><span class="rank rank-default" data-orig="38">38</span></td>
+<tr class="row-fd" data-arch="fullduplex" data-open="open" data-rank="39" data-overall="29.51">
+<td><span class="rank rank-default" data-orig="39">39</span></td>
 <td class="model-cell"><span class="model-name">Moshi</span><span class="badges"><span class="badge b-fd">S2S / Full-Duplex</span><span class="badge b-open">Open</span></span></td>
 <td class="dim">2.01</td><td class="dim">1.60</td><td class="dim">1.30</td><td class="dim">15.64</td><td class="dim">24.04</td><td class="dim">25.93</td><td class="dim">47.40</td><td class="dim">10.12</td><td class="dim">44.23</td>
 <td class="overall-score">29.51</td><td class="cat-rank-cell">&mdash;</td>

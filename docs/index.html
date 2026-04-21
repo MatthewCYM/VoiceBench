@@ -22,7 +22,7 @@ a{color:#3b82f6;text-decoration:none}a:hover{text-decoration:underline}
 section{padding:32px 0}section+section{padding-top:0}
 
 /* Architecture filter cards */
-.filter-cards{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;margin-bottom:6px}
+.filter-cards{display:grid;grid-template-columns:repeat(6,1fr);gap:10px;margin-bottom:6px}
 .fc{background:#fff;border:2px solid #e2e8f0;border-radius:12px;padding:14px 12px;cursor:pointer;transition:all .2s;text-align:center;user-select:none}
 .fc:hover{border-color:#94a3b8;transform:translateY(-1px);box-shadow:0 4px 12px rgba(0,0,0,.06)}
 .fc.active{transform:translateY(-2px);box-shadow:0 6px 20px rgba(0,0,0,.1)}
@@ -56,6 +56,11 @@ section{padding:32px 0}section+section{padding-top:0}
 .fc[data-arch="cascaded"].active{border-color:#2563eb;background:#2563eb}
 .fc[data-arch="cascaded"].active .fc-count,.fc[data-arch="cascaded"].active .fc-label{color:#fff}
 .fc[data-arch="cascaded"].active .fc-desc,.fc[data-arch="cascaded"].active .fc-best,.fc[data-arch="cascaded"].active .fc-best strong{color:#dbeafe}
+
+.fc[data-arch="vision_audio_llm"]{border-color:#ede9fe}.fc[data-arch="vision_audio_llm"] .fc-count{color:#7c3aed}
+.fc[data-arch="vision_audio_llm"].active{border-color:#7c3aed;background:#7c3aed}
+.fc[data-arch="vision_audio_llm"].active .fc-count,.fc[data-arch="vision_audio_llm"].active .fc-label{color:#fff}
+.fc[data-arch="vision_audio_llm"].active .fc-desc,.fc[data-arch="vision_audio_llm"].active .fc-best,.fc[data-arch="vision_audio_llm"].active .fc-best strong{color:#ede9fe}
 
 /* Open/closed toggle pills */
 .open-toggle{display:flex;gap:8px;align-items:center;margin-bottom:14px}
@@ -96,6 +101,7 @@ section{padding:32px 0}section+section{padding-top:0}
 .b-cas{background:#2563eb;color:#fff}
 .b-allm{background:#d97706;color:#fff}
 .b-omni{background:#475569;color:#fff}
+.b-vallm{background:#7c3aed;color:#fff}
 .b-open{background:#dcfce7;color:#166534}
 .b-closed{background:#fee2e2;color:#991b1b}
 
@@ -126,7 +132,7 @@ section{padding:32px 0}section+section{padding-top:0}
 
 footer{border-top:1px solid #e2e8f0;padding:20px 0;text-align:center;font-size:.78rem;color:#94a3b8;margin-top:16px;background:#fff}
 
-@media(max-width:768px){
+@media(max-width:900px){
   .hero h1{font-size:1.4rem}
   .filter-cards{grid-template-columns:repeat(3,1fr)}
   .table-wrap table{min-width:900px}
@@ -141,7 +147,7 @@ footer{border-top:1px solid #e2e8f0;padding:20px 0;text-align:center;font-size:.
 <header class="hero">
   <div class="container">
     <h1>VoiceBench &mdash; <span>Leaderboard</span></h1>
-    <p class="sub">Benchmarking LLM-Based Voice Assistants &middot; 39 Models &middot; 4 Architecture Types &middot; Click cards to filter</p>
+    <p class="sub">Benchmarking LLM-Based Voice Assistants &middot; 39 Models &middot; 5 Architecture Types &middot; Click cards to filter</p>
     <div class="links">
       <a class="primary" href="https://github.com/MatthewCYM/VoiceBench" target="_blank">GitHub &rarr;</a>
       <a class="secondary" href="https://arxiv.org/abs/2410.17196" target="_blank">Paper &rarr;</a>
@@ -168,10 +174,16 @@ footer{border-top:1px solid #e2e8f0;padding:20px 0;text-align:center;font-size:.
       <div class="fc-best">#1: <strong>Whisper + GPT-4o (87.8)</strong></div>
     </div>
     <div class="fc" data-arch="audiollm">
-      <div class="fc-count">11</div>
+      <div class="fc-count">10</div>
       <div class="fc-label">Audio-LLM</div>
       <div class="fc-desc">Audio encoder + LLM, text output</div>
       <div class="fc-best">#1: <strong>Ultravox-GLM-4P7 (88.9)</strong></div>
+    </div>
+    <div class="fc" data-arch="vision_audio_llm">
+      <div class="fc-count">1</div>
+      <div class="fc-label">Vision+Audio+LLM</div>
+      <div class="fc-desc">Vision &amp; audio encoders + LLM, text output</div>
+      <div class="fc-best">#1: <strong>Phi-4-multimodal (64.3)</strong></div>
     </div>
     <div class="fc" data-arch="omni_hd">
       <div class="fc-count">20</div>
@@ -199,6 +211,7 @@ footer{border-top:1px solid #e2e8f0;padding:20px 0;text-align:center;font-size:.
   <div class="legend">
     <div class="legend-item"><span class="legend-swatch" style="background:#2563eb"></span> Cascaded</div>
     <div class="legend-item"><span class="legend-swatch" style="background:#d97706"></span> Audio-LLM</div>
+    <div class="legend-item"><span class="legend-swatch" style="background:#7c3aed"></span> Vision+Audio+LLM</div>
     <div class="legend-item"><span class="legend-swatch" style="background:#475569"></span> Omni</div>
     <div class="legend-item"><span class="legend-swatch" style="background:#059669"></span> S2S / Full-Duplex</div>
     <div class="legend-item"><span class="legend-swatch" style="background:#dcfce7;border:1px solid #bbf7d0"></span> Open</div>
@@ -331,9 +344,9 @@ footer{border-top:1px solid #e2e8f0;padding:20px 0;text-align:center;font-size:.
 <td class="dim">4.21</td><td class="dim">3.66</td><td class="dim">3.48</td><td class="dim">38.88</td><td class="dim">52.15</td><td class="dim">71.65</td><td class="dim">55.30</td><td class="dim">38.14</td><td class="dim">97.69</td>
 <td class="overall-score">64.53</td><td class="cat-rank-cell">&mdash;</td>
 </tr>
-<tr data-arch="audiollm" data-open="open" data-rank="20" data-overall="64.32">
+<tr data-arch="vision_audio_llm" data-open="open" data-rank="20" data-overall="64.32">
 <td><span class="rank rank-default" data-orig="20">20</span></td>
-<td class="model-cell"><span class="model-name">Phi-4-multimodal</span><span class="badges"><span class="badge b-allm">Audio-LLM</span><span class="badge b-open">Open</span></span></td>
+<td class="model-cell"><span class="model-name">Phi-4-multimodal</span><span class="badges"><span class="badge b-vallm">Vision+Audio+LLM</span><span class="badge b-open">Open</span></span></td>
 <td class="dim">3.81</td><td class="dim">3.82</td><td class="dim">3.56</td><td class="dim">39.78</td><td class="dim">42.19</td><td class="dim">65.93</td><td class="dim">61.80</td><td class="dim">45.35</td><td class="dim">100.00</td>
 <td class="overall-score">64.32</td><td class="cat-rank-cell">&mdash;</td>
 </tr>
@@ -471,6 +484,7 @@ footer{border-top:1px solid #e2e8f0;padding:20px 0;text-align:center;font-size:.
       <strong>Architecture types:</strong>
       <strong style="color:#2563eb">Cascaded</strong> = separate ASR + LLM pipeline &middot;
       <strong style="color:#d97706">Audio-LLM</strong> = audio encoder fused with LLM, text output only &middot;
+      <strong style="color:#7c3aed">Vision+Audio+LLM</strong> = vision &amp; audio encoders fused with LLM, text output &middot;
       <strong style="color:#475569">Omni</strong> = end-to-end speech-in speech-out, turn-based &middot;
       <strong style="color:#059669">S2S / Full-Duplex</strong> = simultaneous listen &amp; speak, no external VAD
     </p>
@@ -573,7 +587,7 @@ footer{border-top:1px solid #e2e8f0;padding:20px 0;text-align:center;font-size:.
     if (!isFiltered) { summary.style.display = 'none'; }
     else {
       summary.style.display = 'block';
-      const labels = {all:'All', fullduplex:'S2S / Full-Duplex', cascaded:'Cascaded', audiollm:'Audio-LLM', omni_hd:'Omni', open:'Open-Source', closed:'Closed'};
+      const labels = {all:'All', fullduplex:'S2S / Full-Duplex', cascaded:'Cascaded', audiollm:'Audio-LLM', vision_audio_llm:'Vision+Audio+LLM', omni_hd:'Omni', open:'Open-Source', closed:'Closed'};
       let label = '';
       if (state.arch !== 'all' && state.open !== 'all') label = labels[state.open] + ' ' + labels[state.arch];
       else if (state.arch !== 'all') label = labels[state.arch];

@@ -11,6 +11,7 @@
 
 
 ## News
+* **`2026.04.20`** Check out [HalluAudio](https://github.com/Feiyuzhao25/halluaudio), a comprehensive benchmark for hallucination detection in LALMs.
 * **`2025.04.20`** Released `wildvoice`, a crowd-sourced dataset comprising human-recorded speech with diverse accents.
 * **`2025.04.12`** Released `bbh`, a crowd-sourced dataset comprising human-recorded speech, for evaluating the reasoning ability of voice assistants. 
 * **`2024.12.11`** Updated the VoiceBench Leaderboard to include `mmsu`.

@@ -124,12 +124,16 @@ python evaluate.py --src_file result-naive-alpacaeval-test-audio.jsonl --evaluat
 | [**Sympatheia: Emotionally Adaptive Voice Assistant with Continuous Affect Conditioning**](https://arxiv.org/abs/2606.00851) &nbsp; ![Star](https://img.shields.io/github/stars/susameddin/sympatheia) | 2026-05-30 | [Github](https://github.com/susameddin/sympatheia) |
 | [**Liberating LLM Capabilities in Full-Duplex Speech Models**](https://arxiv.org/abs/2606.07547) &nbsp; ![Star](https://img.shields.io/github/stars/zly-idleness/lws_demo) | 2026-05-04 | [Github](https://github.com/zly-idleness/lws_demo) |
 | [**MiniCPM-o 4.5: Towards Real-Time Full-Duplex Omni-Modal Interaction**](https://arxiv.org/abs/2604.27393) &nbsp; ![Star](https://img.shields.io/github/stars/OpenBMB/MiniCPM-V) | 2026-04-30 | [Github](https://github.com/OpenBMB/MiniCPM-V) |
+| [**Nemotron 3 Nano Omni: Efficient and Open Multimodal Intelligence**](https://arxiv.org/abs/2604.24954) | 2026-04-27 | [HF](https://huggingface.co/nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-BF16) |
+| [**Qwen3.5-Omni Technical Report**](https://arxiv.org/abs/2604.15804) | 2026-04-17 | [Demo](https://huggingface.co/spaces/Qwen/Qwen3.5-Omni-Online-Demo) |
+| [**VoxMind: An End-to-End Agentic Spoken Dialogue System**](https://arxiv.org/abs/2604.15710) &nbsp; ![Star](https://img.shields.io/github/stars/MM-Speech/VoxMind) | 2026-04-17 | [Github](https://github.com/MM-Speech/VoxMind) |
 | [**Resurfacing Paralinguistic Awareness in Large Audio Language Models**](https://arxiv.org/abs/2603.11947) | 2026-03-12 | -- |
 | [**DuplexCascade: Full-Duplex Speech-to-Speech Dialogue with VAD-Free Cascaded ASR-LLM-TTS Pipeline and Micro-Turn Optimization**](https://arxiv.org/abs/2603.09180) | 2026-03-10 | -- |
 | [**Language-Aware Distillation for Multilingual Instruction-Following Speech LLMs with ASR-Only Supervision**](https://arxiv.org/abs/2603.07025) | 2026-03-07 | -- |
 | [**X-OPD: Cross-Modal On-Policy Distillation for Capability Alignment in Speech LLMs**](https://arxiv.org/abs/2603.24596) | 2026-03-06 | -- |
 | [**DIFFA-2: A Practical Diffusion Large Language Model for General Audio Understanding**](https://arxiv.org/abs/2601.23161) &nbsp; ![Star](https://img.shields.io/github/stars/NKU-HLT/DIFFA) | 2026-01-30 | [Github](https://github.com/NKU-HLT/DIFFA) |
 | [**CORD: Bridging the Audio-Text Reasoning Gap via Weighted On-policy Cross-modal Distillation**](https://arxiv.org/abs/2601.16547) | 2026-01-23 | -- |
+| [**AzeroS: Extending LLM to Speech with Self-Generated Instruction-Free Tuning**](https://arxiv.org/abs/2601.06086) &nbsp; ![Star](https://img.shields.io/github/stars/AudenAI/Auden) | 2025-12-31 | [Github](https://github.com/AudenAI/Auden/tree/main/examples/azeros) |
 | [**LFM2 Technical Report**](https://arxiv.org/abs/2511.23404) | 2025-11-28 | -- |
 | [**LongCat-Flash-Omni Technical Report**](https://arxiv.org/abs/2511.00279) &nbsp; ![Star](https://img.shields.io/github/stars/meituan-longcat/LongCat-Flash-Omni) | 2025-10-31 | [Github](https://github.com/meituan-longcat/LongCat-Flash-Omni) |
 | [**Empathy Omni: Enabling Empathetic Speech Response Generation through Large Language Models**](https://arxiv.org/abs/2508.18655) &nbsp; ![Star](https://img.shields.io/github/stars/W311411/Empathy-Omni) | 2025-08-26 | [Github](https://github.com/W311411/Empathy-Omni) |
